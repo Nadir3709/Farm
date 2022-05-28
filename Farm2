@@ -41,6 +41,11 @@ else
     end
 end)
 window:Button("Anti Afk", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Nadir3709/Anti-Afk/main/Anti%20Afk%20Script"))()
+local vu = game:GetService("VirtualUser")
+game:GetService("Players").LocalPlayer.Idled:connect(function()
+   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+   wait(1)
+   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+end)
    print("pressed button")
 end)
