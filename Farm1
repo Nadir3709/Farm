@@ -4,7 +4,7 @@ window:Toggle("Auto Open Egg", false, function(t)
     if t then
         _G.Autoopen = true
         while _G.Autoopen == true do wait(0)
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-48.7089729, 154.561554, -802.176086, -0.601148129, 1.01675155e-07, 0.799137652, 5.03299198e-08, 1, -8.93706087e-08, -0.799137652, -1.35044402e-08, -0.601148129)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
 local args = {
     [1] = "Basic Egg",
     [2] = 3
