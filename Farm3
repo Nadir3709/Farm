@@ -44,12 +44,12 @@ else
     _G.Autoopen = false
     end
 end)
-window:Toggle("Auto Rebirth 100T", false, function(t)
+window:Toggle("Auto Rebirth 500T", false, function(t)
     if t then
         _G.Autoclicker = true
         while _G.Autoclicker == true do wait(0)
         local args = {
-    [1] = 24
+    [1] = 25
 }
 
 game:GetService("ReplicatedStorage").Remotes.Rebirth:FireServer(unpack(args))
